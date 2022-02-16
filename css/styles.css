@@ -1,18 +1,47 @@
+/*----------------------------------------import------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap');
+
+
+/*-----------------------------------------body-------*/
 body{
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/*-----------------------------------------Test styles-----*/
+h1{
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: white;
+    font-style: normal;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+h3{
+    font-weight:bold;
+    font-style: normal;
 }
 
 p{
     color: grey;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
 }
 #title{
     background-color: #ff4c68 ;
 }
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
-/*    Navigation Bar    */
+/*-----------------------------------------Navigation Bar-----*/
 .navbar{
     padding-bottom: 4.5rem;
 }
@@ -38,30 +67,32 @@ p{
     margin: 5% 3% 5% 0%;
 }
 
-h1{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    color: white;
-}
 
-/*   title image*/
+
+/*-----------------------------------------title image-----*/
 
 .title-image{
-    width: 75%;
-    transform: rotate(20deg);
+    width: 23%;
+    transform: rotate(22deg);
+    position: absolute;
 }
 
-
-/*--------Features-----*/
-
-h3{
-    font-family: "Montserrat";
-    font-weight:bold
+@media (max-width: 1009px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate();
+    }
 }
+
+/*-----------------------------------------Features--------*/
+
 #features{
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
 }
 
 .col-feature{
@@ -75,4 +106,75 @@ h3{
 }
 .feature-icon:hover{
     color: #ff4c68;
+}
+
+/*------------------------------------------Testimonials--------*/
+
+#testimonials{
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+/*-------------------------------------------Press section------*/
+
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width:13%;
+    margin: 20px 20px 50px;
+}
+
+/*-------------------------------------------pricing section-----*/
+
+#pricing{
+    text-align: center;
+    padding: 100px;
+}
+
+.pricing-col{
+    padding: 3% 2%;
+}
+
+/*-------------------------------------------cta-------*/
+
+#cta{
+    text-align: center;
+    background-color: #fc3251;
+    color: #fff;
+    padding-top: 7%;
+}
+
+/*--------------------------------------------footer-----*/
+
+#footer{
+    padding: 5%;
+    text-align: center;
+}
+.footer-link{
+    color: black;
+}
+.footer-icon{
+    margin: 7px;
+}
+.fa-twitter:hover{
+    color: rgb(103, 125, 223);
+}
+.fa-facebook:hover{
+    color: rgb(35, 62, 184);
+}
+.fa-instagram:hover{
+    color: rgb(219, 68, 68);
 }
